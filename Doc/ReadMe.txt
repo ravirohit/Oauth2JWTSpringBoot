@@ -6,6 +6,8 @@ customUserDetailsService impl ref link:
   http://progressivecoder.com/implementing-spring-boot-security-using-userdetailsservice/
 -> Implementation to add custom token in Jwt token:
   https://www.baeldung.com/spring-security-oauth-jwt-legacy
+-> Ref to skip Oauth user approval page to direct from login page to client redirect url with Auth Code.
+  https://stackoverflow.com/questions/29696004/skip-oauth-user-approval-in-spring-boot-oauth2
 
 ----------------------
 -> project name: spring-security-demo
