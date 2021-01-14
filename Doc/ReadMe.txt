@@ -1,9 +1,12 @@
 Ref link: 
-https://howtodoinjava.com/spring-boot2/oauth2-auth-server/
-https://dzone.com/articles/secure-spring-rest-api-using-oauth2-1
-https://stackoverflow.com/questions/46862840/unable-to-use-resourceserverconfigureradapter-and-websecurityconfigureradapter-i
+  https://howtodoinjava.com/spring-boot2/oauth2-auth-server/
+  https://dzone.com/articles/secure-spring-rest-api-using-oauth2-1
+  https://stackoverflow.com/questions/46862840/unable-to-use-resourceserverconfigureradapter-and-websecurityconfigureradapter-i
 customUserDetailsService impl ref link:
-http://progressivecoder.com/implementing-spring-boot-security-using-userdetailsservice/
+  http://progressivecoder.com/implementing-spring-boot-security-using-userdetailsservice/
+-> Implementation to add custom token in Jwt token:
+  https://www.baeldung.com/spring-security-oauth-jwt-legacy
+
 ----------------------
 -> project name: spring-security-demo
 -> Run as java application from file containing main class: SpringSecurityDemoApplication.java
@@ -74,7 +77,12 @@ Solution:
     public PasswordEncoder passwordEncoder() {
       return new BCryptPasswordEncoder();
     }
+    
+===================== NOTE =============================
+-> That we used a symmetric key in our JwtAccessTokenConverter to sign our tokens – which means we will need to use the 
+   same exact key for the Resources Server as well.
 
+   
    
    
    
