@@ -51,7 +51,8 @@ public class OAuth2AuthorizationServer extends AuthorizationServerConfigurerAdap
             .resourceIds("oauth2-resource")
             .redirectUris("http://localhost:8080/authcode")
             .accessTokenValiditySeconds(1200)
-            .refreshTokenValiditySeconds(2400);
+            .refreshTokenValiditySeconds(2400)
+            .autoApprove(true);
     }
     @Override
     public void configure(final AuthorizationServerEndpointsConfigurer endpoints) throws Exception { 
