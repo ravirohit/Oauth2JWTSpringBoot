@@ -20,7 +20,7 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 @EnableAuthorizationServer
 public class OAuth2AuthorizationServer extends AuthorizationServerConfigurerAdapter {
 	  @Autowired
-	 //@Qualifier("authenticationManagerBean")
+	 //@Qualifier("authenticationManagerBean")  // need to define in WebSecurityConfig.java as bean to be injected
 	  private AuthenticationManager authenticationManager;
 	  @Autowired
 	  UserDetailsService userDetailsService;
